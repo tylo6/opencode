@@ -1,0 +1,19 @@
+{
+  "name": "opencode",
+  "version": "0.1.0",
+  "description": "Outil universel IA : CLI + API + Desktop, multimodèle",
+  "main": "cli/index.js",
+  "type": "module",
+  "scripts": {
+    "cli": "node cli/index.js",
+    "api": "node api/server.js",
+    "test": "node tests/test-api.js"
+  },
+  "keywords": ["ai", "cli", "anthropic", "openai", "azure"],
+  "author": "Marcou",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "@anthropic-ai/sdk": "^0.24.3"
+  }
+}
