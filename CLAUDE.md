@@ -83,7 +83,7 @@ npm test                         # Teste tous les modèles configurés
 
 | Fournisseur | Modèle | Var env | Support |
 |---|---|---|---|
-| **Anthropic** | claude-3-haiku-20240307 | `ANTHROPIC_KEY` | ✅ Actif |
+| **Anthropic** | claude-opus-4-1 | `ANTHROPIC_KEY` | ✅ Actif |
 | Azure OpenAI | `AZURE_KEY` + `AZURE_ENDPOINT` | ⏳ Futur |
 | OpenAI direct | `OPENAI_KEY` | ⏳ Futur |
 | LM Studio | `LMSTUDIO_URL` | ✅ Local |
