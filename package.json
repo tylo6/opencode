@@ -9,11 +9,17 @@
     "api": "node api/server.js",
     "test": "node tests/test-api.js"
   },
-  "keywords": ["ai", "cli", "anthropic", "openai", "azure"],
+  "keywords": [
+    "ai",
+    "cli",
+    "anthropic",
+    "openai",
+    "azure"
+  ],
   "author": "Marcou",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "@anthropic-ai/sdk": "^0.24.3"
+    "@anthropic-ai/sdk": "^0.24.3",
+    "dotenv": "^18.0.9"
   }
 }
