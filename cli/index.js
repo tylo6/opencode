@@ -68,7 +68,7 @@ async function callAnthropic(text) {
   const result = response.content[0].text;
   console.log(result);
   console.log('─'.repeat(60));
-  console.log(`✅ Tokens utilisés: ${response.usage.input_tokens} in / ${response.usage.output_tokens} out\n`);
+  console.log(`✅ ${response.model} — ${response.usage.input_tokens} in / ${response.usage.output_tokens} out tokens\n`);
 }
 
 async function callLMStudio(text) {
