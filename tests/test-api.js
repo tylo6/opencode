@@ -2,7 +2,7 @@
 
 import 'dotenv/config.js';
 import Anthropic from '@anthropic-ai/sdk';
-import fetch from 'node-fetch';
+// fetch natif Node.js 18+ — node-fetch supprimé
 
 console.log('\n🧪 Opencode — Test des modèles');
 console.log('═'.repeat(60));
@@ -24,7 +24,7 @@ async function testAnthropic() {
     });
 
     const response = await client.messages.create({
-      model: 'claude-opus-4-1',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 100,
       messages: [{ role: 'user', content: 'Réponds simplement: OK' }],
     });
