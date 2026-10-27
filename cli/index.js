@@ -2,7 +2,7 @@
 
 import 'dotenv/config.js';
 import Anthropic from '@anthropic-ai/sdk';
-import fetch from 'node-fetch';
+// fetch natif Node.js 18+ — node-fetch supprimé
 
 // Parse arguments
 const args = process.argv.slice(2);
@@ -60,7 +60,7 @@ async function callAnthropic(text) {
   console.log('─'.repeat(60));
 
   const response = await client.messages.create({
-    model: 'claude-opus-4-1',
+    model: process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001',
     max_tokens: 1024,
     messages: [{ role: 'user', content: text }],
   });
